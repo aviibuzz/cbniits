@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+main{
+margin-top: 56px;
+}
+.header{
+  background: #EB5757 !important;
+}
+.inputColor div{
+  color: #EB5757 !important;
+}
+.completed{
+  text-decoration: line-through;
+}
+
