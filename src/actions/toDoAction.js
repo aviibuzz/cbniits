@@ -8,7 +8,7 @@ export const toDoAction = {
 
 // handle onchange event
 function onChangeProps(props){
-    
+    debugger;
     return dispatch =>{
         dispatch(handleOnChangeProps(props));
     }
@@ -39,6 +39,7 @@ function deleteToDo(props){
 
 // export handle on change props
 export function handleOnChangeProps(props){
+    debugger
     return{
         type: "HANDLE_ON_CHANGE",
         props: props,

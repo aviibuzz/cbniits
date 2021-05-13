@@ -29,7 +29,7 @@ const {handleChange,value,handleForm} =props;
   return (
     <form className={classes.root} noValidate autoComplete="off" fullWidth onSubmit={handleSubmit}>
       <div>
-        <TextField id="addToDo" label="" value={value}  onChange={handleInput} placeholder="Add to list..." className="inputColor"
+        <TextField id="addToDo" label="" value={value}  onChange={handleInput} placeholder="Add to list...." className="inputColor"
          InputProps={{
             startAdornment: <InputAdornment position="start"><AddIcon/></InputAdornment>,
           }}

@@ -22,8 +22,9 @@ class ToDoApp extends Component{
         const {dispatch}=this.props;
         const {toDoList,name}=this.props.toDoList;
         const handleChange=(value,event)=>dispatch(toDoAction.onChangeProps(value,event));
+        // const handleUpdateChange=(value,event)=>dispatch(toDoAction.onChangeProps(value,event));
         const handleForm=(value,event)=>{
-                      dispatch(toDoAction.addToDo(value,event));    
+        dispatch(toDoAction.addToDo(value,event));    
            };
         const handleToggle=(value,event)=>dispatch(toDoAction.toggleToDo(value,event));
         const handleDelete=(value,event)=>dispatch(toDoAction.deleteToDo(value,event));
@@ -34,7 +35,7 @@ class ToDoApp extends Component{
            <Container maxWidth="sm">
           <ToDoInput handleChange={handleChange} value={name} handleForm={handleForm}/>
           <br/>
-          <ToDoListComponent data={toDoList} handleToggle={handleToggle} handleDelete={handleDelete}/>
+          <ToDoListComponent data={toDoList} handleToggle={handleToggle} handleDelete={handleDelete} handleChange={handleChange} handleForm={handleForm} />
          </Container>
            </main>
            </>

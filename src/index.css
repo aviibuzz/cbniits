@@ -23,4 +23,18 @@ margin-top: 56px;
 .completed{
   text-decoration: line-through;
 }
+.toDoRow:hover{
+  color:red
+}
+
+/* .onHoverDisplay{
+ opacity: 1;
+}
+li:hover + .toDoRow + .onHoverDisplay{
+ opacity: 1 !important;
+ transition: 0.5ms;
+} */
+/* .onHoverDisplay:hover{
+  display: block;
+} */
 
