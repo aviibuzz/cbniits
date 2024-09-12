@@ -1,16 +1,17 @@
-import './App.css';
-import Calculator from './Calculator';
-import {ToDoApp} from './ToDoList';
-import Rough from './components/Rough';
-
-
+import "./App.css";
+// import Calculator from "./Calculator";
+// import { ToDoApp } from "./ToDoList";
+// import TableTest from "./TableTest";
+// import Rough from "./components/Rough";
+import TableWithRandomApi from "./TableRandomAPI";
 
 function App() {
   return (
     <div className="App">
-      <ToDoApp/>
-      <Rough/>
-   
+      {/* <ToDoApp /> */}
+      {/* <TableTest /> */}
+      {/* <Rough /> */}
+      <TableWithRandomApi />
     </div>
   );
 }
